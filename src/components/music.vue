@@ -77,7 +77,7 @@
     }
     .music {
         position: fixed;
-        left: 0;
+        left: -80px;
         top: 100px;
         width: 100px;
         height: 100px;
@@ -128,6 +128,7 @@
         width: 150px;
         height: 160px;
         transition: all 0.35s ease-in-out;
+        left: 0;
     }
 
 </style>
