@@ -8,7 +8,7 @@ script: yarn build
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: $_TOKEN
   keep_history: true
   committer_from_gh: true
   target_branch: master
