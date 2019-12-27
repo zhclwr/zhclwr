@@ -12,7 +12,7 @@
             <img v-else src="../assets/pause.png" alt="" class="c" @click="play">
             <img src="../assets/forward.png" alt="" :class="{disable: forwardDisable}" class="c">
         </div>
-        <audio ref="music" autoplay :src="musicSrc" id="mymusic"></audio>
+        <audio ref="music" autoplay :src="musicSrc"/>
     </div>
 </template>
 <script lang="ts">
@@ -20,7 +20,7 @@
 
     @Component
     export default class Music extends Vue{
-        musicSrc = "./love_summer.mp3"
+        musicSrc = "./assets/love_summer.mp3"
         backDisable = true
         forwardDisable = true
         time = ""
@@ -64,10 +64,10 @@
                     clearInterval(_this.timeInterval)
                 })
             })
-
         }
-
-
+        get top(){
+            return window.innerHeight - 200
+        }
     }
 </script>
 <style lang="less">
@@ -78,8 +78,8 @@
     .music {
         position: fixed;
         left: -80px;
-        top: 100px;
         width: 100px;
+        top: 100px;
         height: 100px;
         background: darkgrey;
         overflow: hidden;

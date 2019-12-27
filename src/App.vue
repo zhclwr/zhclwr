@@ -1,9 +1,9 @@
 <template>
     <div id="app">
         <div id="nav">
-
+            
         </div>
-        <music></music>
+        <music/>
     </div>
 </template>
 <script lang="ts">
