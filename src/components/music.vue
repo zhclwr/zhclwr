@@ -77,11 +77,11 @@
     }
     .music {
         position: fixed;
-        left: -80px;
+        left: 0;
         width: 100px;
-        top: 100px;
+        bottom: 0;
         height: 100px;
-        background: darkgrey;
+        background: #FFFFFF;
         overflow: hidden;
         transition: all 0.35s ease-in-out;
         .container {
