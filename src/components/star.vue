@@ -34,7 +34,7 @@
             })
             // this.renderer.setClearColor(0x000000, 0.0);
             this.renderer.setSize(this.windowWidth, this.windowHeight)
-            this.scene = new THREE.Scene({ antialias: true })
+            this.scene = new THREE.Scene()
             this.scene.fog = new THREE.FogExp2(0x1b1b1b, 0.0001);
             this.camera = new THREE.OrthographicCamera(this.windowWidth / -2, this.windowWidth / 2, this.windowHeight / 2, this.windowHeight / -2, 0, 1000)
             this.camera.position.set(0, 0, 500)

@@ -65,7 +65,7 @@
         <p>...</p>
         <br>
         <br>
-        
+
     </div>
 </template>
 <script lang="ts">
