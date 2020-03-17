@@ -1,17 +1,25 @@
 <template>
     <div id="app">
+        <my-header />
+<!--        <star />-->
+        <poem />
+        <main1 />
+        <music />
 
-        <music/>
     </div>
 </template>
 <script lang="ts">
     import Music from './components/music.vue'
+    import Star from './components/star.vue'
+    import Poem from './components/poem.vue'
+    import Main1 from './components/main.vue'
+    import MyHeader from './components/header.vue'
     import {Component, Vue} from "vue-property-decorator";
 
     @Component({
-        components: {Music}
+        components: {Music, Star, MyHeader, Poem, Main1}
     })
-    export default class App extends Vue{
+    export default class App extends Vue {
 
     }
 </script>
@@ -19,25 +27,21 @@
     * {
         margin: 0;
         padding: 0;
+        font-family: "Noto Sans SC";
+        font-weight: 100;
     }
+
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
+        position: relative;
+        overflow: hidden;
     }
-
-    #nav {
-        padding: 30px;
-
-        a {
-            font-weight: bold;
-            color: #2c3e50;
-
-            &.router-link-exact-active {
-                color: #42b983;
-            }
-        }
+    h1 {
+        font-weight: bold;
+    }
+    body {
+        color: #606975;
     }
 </style>

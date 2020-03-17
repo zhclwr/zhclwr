@@ -12,7 +12,7 @@
             <img v-else src="../assets/pause.png" alt="" class="c" @click="play">
             <img src="../assets/forward.png" alt="" :class="{disable: forwardDisable}" class="c">
         </div>
-        <audio ref="music" autoplay :src="musicSrc"/>
+        <audio ref="music"  :src="musicSrc"/>
     </div>
 </template>
 <script lang="ts">
