@@ -77,14 +77,14 @@
                 this.mouse.y, -10
             )
             geometry.vertices.push(vertices)
-            let material = new THREE.PointCloudMaterial({
+            let material = new THREE.PointsMaterial({
                 color: new THREE.Color(0xffffff),
                 size: this.isIpad ? 6 : 3,
                 transparent: true,
                 opacity: 0.8,
                 sizeAttenuation: false
             })
-            this.particle = new THREE.PointCloud(geometry, material)
+            this.particle = new THREE.Points(geometry, material)
             this.particle.speed = Math.random() / 100 + 0.002
             this.particle.direction = {
                 x: (Math.random() - .5) * this.windowWidth * 3,

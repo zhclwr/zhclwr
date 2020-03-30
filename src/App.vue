@@ -3,7 +3,7 @@
         <my-header />
 <!--        <star />-->
         <poem />
-        <main1 />
+    <!--    <main1 />-->
         <music />
 
     </div>

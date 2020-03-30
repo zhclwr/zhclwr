@@ -76,7 +76,14 @@
     })
     export default class Header extends Vue {
         created() {
+            console.log(`        _              _
+       | |            | |
+  ____ | |__     ___  | | __      __  _ __
+ |_  / | '_ \\   / __| | | \\ \\ /\\ / / | '__|
+  / /  | | | | | (__  | |  \\ V  V /  | |
+ /___| |_| |_|  \\___| |_|   \\_/\\_/   |_|
 
+                                           `)
         }
         get isIpad() {
             return !!(navigator.userAgent.match(/Android/i)
